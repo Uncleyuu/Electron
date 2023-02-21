@@ -1,0 +1,257 @@
+
+body{
+    align-items: center;
+    /* background: url("../images/colorful.png"); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+    overflow-y: hidden;
+    height: 100vh;
+    -webkit-app-region: drag;
+}
+
+.logo{
+    top :0;
+    margin: -60px;
+}
+
+.logo i{
+    padding: 0;
+    font-size: 100px;
+}
+
+.winChange{
+    transform: translateX(230%);
+    margin: -10px;
+}
+
+.winChange li{
+    list-style-type:none;
+    float: left;
+    margin: 0px 0px 0px 20px;
+    -webkit-app-region: no-drag;
+}
+
+
+.winChange  i:hover{
+    cursor: pointer;
+    color: gray;
+}
+
+.logo{
+    /* background-color: aliceblue; */
+    transition: all 0.3s;
+}
+
+#logo{
+    -webkit-app-region: no-drag;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.app_title{
+    font-size: 30px;
+    color: #fff;
+}
+
+.container{
+    border-radius: 30px;
+    height: 70vh;
+    max-width: 600px;
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+}
+
+.form_title{
+    font-weight: 200;
+    margin:-10px;
+    margin-bottom: 20px;
+}
+
+.link{
+    color: gray;
+    font-size: 10px;
+    margin: 10px 0;
+    text-decoration: none;
+    -webkit-app-region: no-drag;
+}
+
+.link:hover{
+    color: black;
+}
+
+.container_form{
+    top: 0;
+    height: 100%;
+    position: absolute;
+    transition: all 0.5s;
+    /*background-color: rgba(0, 0, 0 ,0.1);*/
+}
+
+.container--signin{
+    left: 0;
+    width: 50%;
+    z-index: 2;/*第二层*/
+}
+
+.container--signup{
+    left: 0;
+    opacity: 0;
+    width: 50%;
+    z-index: 1;/*第一层*/
+}  
+
+.container.right-panel-active .container--signup{
+    animation: show 0.6s;/*         */
+    opacity: 1;
+    transform: translateX(100%);
+    z-index: 5;
+}
+
+
+.container_overlay{
+    top: 0 ;
+    height: 100%;
+    left: 50%;
+    overflow: hidden;
+    position: absolute;;
+    transition: all 0.6s;
+    width: 50%;
+    z-index: 100;
+}
+
+.container.right-panel-active .container_overlay {
+	transform: translateX(-100%);
+}
+
+.overlay{
+    /* background-image: url("../images/sea.png"); */
+    background-color: #fff;
+    background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    height: 100%;
+    left: -100%;
+    position: relative;
+    transform: translateX(0);
+    transition: transform  0.6s;
+    width: 200%;
+    display: flex;
+    flex-direction: column;/*主轴垂直*/
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+
+.container.right-panel-active .overlay {
+	 transform: translateX(50%);
+}
+
+.overlay_panel{
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    transform: translateX(0);
+    transition: transform  0.6s;
+    width: 50%;
+}
+
+.overlay--left {
+	transform: translateX(-20%);
+}
+
+.container.right-panel-active .overlay--left {
+	transform: translateX(0);
+}
+
+.overlay--right {
+	right: 0;
+	transform: translateX(0);
+}
+
+.container.right-panel-active .overlay--right {
+	transform: translateX(20%);
+}
+
+.button {
+	background-color: white;
+    opacity: 1;
+	border-radius: 20px;
+	border: 10px black;
+	cursor: pointer;
+	font-weight: bold;
+	letter-spacing: 0.1rem;
+	padding: 0.9rem 4rem;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+    -webkit-app-region: no-drag;
+}
+
+#signIn,
+#signUp{
+    border: solid 3px lightgrey;
+}
+
+.form > .button {
+	margin-top: 1.5rem;
+}
+
+.button:active {
+	transform: scale(0.95);
+}
+
+.button:focus {
+	outline: none;
+}
+
+.form {
+    top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 3rem;
+	height: 100%;
+	text-align: center;
+}
+
+.input {
+    border-radius: 30px;
+	background-color: #fff;
+    opacity: 0.6;
+	border: none;
+	padding: 0.9rem 0.9rem;
+	margin: 5px 0;
+	width: 100%;
+    -webkit-app-region: no-drag;
+}
+
+@keyframes show{
+    0%,
+    49.99%{
+        opacity: 0;
+        z-index: 1;
+    }
+
+    50%,
+    100%{
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+.warn{
+    /* background-color: aqua; */
+    height: 15px;
+    font-size: 15px;
+    color: red;
+}

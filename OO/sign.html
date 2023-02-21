@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <link href="style/sign.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="iconfont-sign/iconfont.css" type="text/css">
+    <link rel="stylesheet" href="vidbg/dist/vidbg.css" type="text/css">
+    <title>Hello OO</title>
+  </head>
+  <body data-vidbg-bg="mp4:video/sea.mp4" data-vidbg-options="loop: true, muted: true, overlay: true">
+
+    <script src="script/sign.js" async></script>
+    <script src="vidbg/dist/vidbg.js" async></script>
+    <script src="jquery/dist/jquery.min.js" async></script>
+    <script src="script/signNode.js" async></script>
+
+    <ul class="winChange">
+      <!-- <li><i class="iconfont icon-max" id="max"></i></li> -->
+      <li><i class="iconfont icon-min" id="min"></i></li>
+      <li><i class="iconfont icon-close" id="close"></i></li>
+    </ul>
+
+    <div class="logo">
+      <i class="iconfont icon-wuxian" id="logo"></i>
+    </div>
+
+
+    <div class="container right-panel-active">
+
+      <!-- 登录 -->
+      <div class="container_form container--signin">
+        <form action="#" method="post" class="form" id="form_signin">
+          <h2 class="form_title">Sign In</h2>
+          <input type="text" placeholder="UserId" class="input" name="UserId" id="inUserId">
+          <div class="warn" id="inUserIdWarn"></div>
+          <input type="password" placeholder="PassWord" class="input" name="PassWord" id="inPassWord">
+          <div class="warn" id="inPassWordWarn"></div>
+          <a href="#" class="link">Forget your PassWord</a>
+          <button class="button" id="signIn">Sign In</button>
+        </form>
+      </div>
+
+      <!-- 注册 -->
+      <div class="container_form container--signup">
+        <form action="#" method="post" class="form" id="form_signup">
+          <h2 class="form_title">Sign Up</h2>
+          <input type="text" placeholder="UserName" class="input" name="UserName" id="upUserName">
+          <div class="warn" id="upUserNameWarn"></div>
+          <input type="text" placeholder="Email" class="input" name="Email" id="upEmail">
+          <div class="warn" id="upEmailWarn"></div>
+          <input type="text" placeholder="PassWord" class="input" name="PassWord" id="upPassWord">
+          <div class="warn" id="upPassWordWarn"></div>
+          <button class="button" id="signUp">Sign Up</button>
+        </form>
+      </div>
+
+      <!-- 移动面板 -->
+      <div class="container_overlay">
+        <div class="overlay">
+          <div class="overlay_panel overlay--right">
+            <button class="button" id="goSignup">Go SignUp</button>
+          </div>
+          <div class="overlay_panel overlay--left">
+            <button class="button" id="goSignin">Go SignIn</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- <script>
+      window.nodeRequire = require;
+      delete window.require;
+      delete window.exports;
+      delete window.module;
+    </script>  -->
+    <script src="socket.io.js"></script>
+    <script>
+      let socket = io();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+{
+  "id": "3485280",
+  "name": "write",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2815727",
+      "name": "素材",
+      "font_class": "sucai",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "6337465",
+      "name": "笑脸",
+      "font_class": "xiaolian",
+      "unicode": "ec80",
+      "unicode_decimal": 60544
+    },
+    {
+      "icon_id": "1174",
+      "name": "用研",
+      "font_class": "yongyan",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "1160270",
+      "name": "write",
+      "font_class": "write",
+      "unicode": "e6ca",
+      "unicode_decimal": 59082
+    },
+    {
+      "icon_id": "22978022",
+      "name": "聊天",
+      "font_class": "liaotian",
+      "unicode": "e89c",
+      "unicode_decimal": 59548
+    }
+  ]
+}

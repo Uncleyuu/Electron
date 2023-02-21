@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name= "viewport"content="width=device-width, initial-scale=1.0">
+    <meta http-equiv= "X-UA-Compatible"content="ie=edge">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="iconfont-home/iconfont.css">
+    <link rel="stylesheet" href="iconfont-sign/iconfont.css">
+    <link rel="stylesheet" href="iconfont-talk/iconfont.css">
+    <title>Home</title>
+</head>
+<div>
+    <script src="script/canva-home.js" async></script>
+
+    <div class="top">
+        <i class="iconfont icon-wuxian" id="logo"></i>
+        <ul class="winChange">
+            <!-- <li><i class="iconfont icon-max" id="max"></i></li> -->
+            <li id=><i class="iconfont icon-close" id="close"></i></li>
+            <li><i class="iconfont icon-min" id="min"></i></li>
+        </ul>
+    </div>
+    
+
+    <div class="home">
+
+        <div id="canvas-container">
+            <canvas id="myCanvas">
+                你的浏览器不支持canvas,请升级你的浏览器
+            </canvas>
+        </div>
+
+        <div class="wrap">
+            <div class="page">
+                <div class="font">
+                    <div class="avatar">
+                        <img src="images/colorful.png" class="img" alt="">
+                    </div>
+                    <div class="name">
+                        <h2 class="myName">Name</h2>
+                    </div>
+                    <div class="myId" data-ID="10001"></div>
+                </div> 
+                <div class="line"></div>
+                <div class="title">
+                    <p>Menu</p>
+                </div>
+                <div class="menu">
+                    <div class="item">
+                        <div class="light"></div>
+                        <div class="function" id="active">
+                            <i class="iconfont icon-caidan"></i>
+                        </div>
+                        <div class="description">菜单</div>
+                        <div class="ricon"></div>
+                    </div>
+                    <div class="item">
+                        <div class="light"></div>
+                        <div class="function">
+                            <i class="iconfont icon-gerenxinxi"></i>
+                        </div>
+                        <div class="description">个人信息</div>
+                        <div class="ricon"></div>
+                    </div>
+                    <div class="item">
+                        <div class="light"></div>
+                        <div class="function">
+                            <i class="iconfont icon-tianjiahaoyou"></i>
+                        </div>
+                        <div class="description">添加好友</div>
+                        <div class="ricon"></div>
+                    </div>
+                    <div class="item">
+                        <div class="light"></div>
+                        <div class="function">
+                            <i class="iconfont icon-addgroup"></i>
+                        </div>
+                        <div class="description">加入群聊</div>
+                        <div class="ricon"></div>
+                    </div>
+                    <div class="item">
+                        <div class="light"></div>
+                        <div class="function">
+                            <i class="iconfont icon-chuangjianqunliao"></i>
+                        </div>
+                        <div class="description">创建群聊</div>
+                        <div class="ricon"></div>
+                    </div >
+                    <div class="item">
+                        <div class="light"></div>
+                        <div class="function">
+                            <i class="iconfont icon-mianduimianliaotian"></i>
+                        </div>
+                        <div class="description">面对面聊天</div>
+                        <div class="ricon"></div>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="title">
+                    <p>Server</p>
+                </div>
+                <div class="server">
+                    <div class="item">
+                        <div class="light"></div>
+                        <div class="function">
+                            <i class="iconfont icon-shezhi"></i>
+                        </div>
+                        <div class="description">设置</div>
+                        <div class="ricon"></div>
+                    </div>
+                    <div class="item">
+                        <div class="light"></div>
+                        <div class="function">
+                            <i class="iconfont icon-qiehuanzhanghao"></i>
+                        </div>
+                        <div class="description" id="changeId">切换账号</div>
+                        <div class="ricon"></div>
+                    </div>
+                    <div class="item">
+                        <div class="light"></div>
+                        <div class="function">
+                            <i class="iconfont icon-tuichudenglu out"></i>
+                        </div>
+                        <div class="description out">退出登录</div>
+                        <div class="ricon"></div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+      
+        <div class="form">
+            <div class="section">
+                <div class="card">
+                    <div class="img-role">
+                        <img src="images/OO.png" alt="" class="idImg" data-name="person1">
+                    </div>
+                    <div class="card-bg">官方</div>
+                    <div class="friendId" data-ID="10000"></div>
+                    <div class="talk"><i class="iconfont icon-liaotian"></i></div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="card">
+                    <div class="img-role">
+                        <img src="images/sea.png" alt="" class="idImg">
+                    </div>
+                    <div class="card-bg">如果早知道</div>
+                    <div class="friendId" data-ID="10002"></div>
+                    <div class="talk"><i class="iconfont icon-liaotian"></i></div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="card">
+                    <div class="img-role">
+                        <img src="images/flightPlane.png" alt="" class="idImg">
+                    </div>
+                    <div class="card-bg">罗辑</div>
+                    <div class="friendId" data-ID="10003"></div>
+                    <div class="talk"><i class="iconfont icon-liaotian"></i></div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="card">
+                    <div class="img-role">
+                        <img src="images/green.png" alt="" class="idImg">
+                    </div>
+                    <div class="card-bg">智子</div>
+                    <div class="friendId" data-ID="10004"></div>
+                    <div class="talk"><i class="iconfont icon-liaotian"></i></div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="card">
+                    <div class="img-role">
+                        <img src="images/shenkong.png" alt="" class="idImg">
+                    </div>
+                    <div class="card-bg">叶文洁</div>
+                    <div class="friendId" data-ID="10005"></div>
+                    <div class="talk"><i class="iconfont icon-liaotian"></i></div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="card">
+                    <div class="img-role">
+                        <img src="images/forest.png" alt="" class="idImg">
+                    </div>
+                    <div class="card-bg">穿山甲</div>
+                    <div class="friendId" data-ID="10006"></div>
+                    <div class="talk"><i class="iconfont icon-liaotian"></i></div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="card">
+                    <div class="img-role">
+                        <img src="images/hamburger.png" alt="" class="idImg">
+                    </div>
+                    <div class="card-bg">蕉太狼</div>
+                    <div class="friendId" data-ID="10007"></div>
+                    <div class="talk"><i class="iconfont icon-liaotian"></i></div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="card">
+                    <div class="img-role">
+                        <img src="images/threeLevel.png" alt="" class="idImg">
+                    </div>
+                    <div class="card-bg">团长</div>
+                    <div class="friendId" data-ID="10008"></div>
+                    <div class="talk"><i class="iconfont icon-liaotian"></i></div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="card">
+                    <div class="img-role">
+                        <img src="images/daqizhishang.png" alt="" class="idImg">
+                    </div>
+                    <div class="card-bg">章北海</div>
+                    <div class="friendId" data-ID="10009"></div>
+                    <div class="talk"><i class="iconfont icon-liaotian"></i></div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="card">
+                    <div class="img-role">
+                        <img src="images/gaoda.png" alt="" class="idImg">
+                    </div>
+                    <div class="card-bg">头号玩家</div>
+                    <div class="friendId" data-ID="10010"></div>
+                    <div class="talk"><i class="iconfont icon-liaotian"></i></div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="card">
+                    <div class="img-role">
+                        <img src="images/laosepiBeach.png" alt="" class="idImg">
+                    </div>
+                    <div class="card-bg">大司马</div>
+                    <div class="friendId" data-ID="10011"></div>
+                    <div class="talk"><i class="iconfont icon-liaotian"></i></div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="card">
+                    <div class="img-role">
+                        <img src="images/windmill.png" alt="" class="idImg">
+                    </div>
+                    <div class="card-bg">胡歌</div>
+                    <div class="friendId" data-ID="10012"></div>
+                    <div class="talk"><i class="iconfont icon-liaotian"></i></div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="card">
+                    <div class="img-role">
+                        <img src="images/laosepi.png" alt="" class="idImg">
+                    </div>
+                    <div class="card-bg">昌航第一深情</div>
+                    <div class="friendId" data-ID="10013"></div>
+                    <div class="talk"><i class="iconfont icon-liaotian"></i></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="script/home.js" async></script>
+</body>
+ 
+</html>

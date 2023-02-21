@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/talk.css">
+    <link rel="stylesheet" href="iconfont-sign/iconfont.css">
+    <link rel="stylesheet" href="iconfont-talk/iconfont.css">
+    <title>Talk</title>
+</head>
+<body>
+    <div class="top">
+        <i class="iconfont icon-wuxian" id="logo"></i>
+        <ul class="winChange">
+            <!-- <li><i class="iconfont icon-max" id="max"></i></li> -->
+            <li id=><i class="iconfont icon-close" id="close"></i></li>
+            <li><i class="iconfont icon-min" id="min"></i></li>
+        </ul>
+    </div>
+
+    <div class="bottom">
+        <div id="canvas-container">
+            <canvas id="canvas"></canvas>
+        </div>
+
+        <div class="left">
+            <div class="friendsList">
+                <!-- <div class="friend" data-active="1">
+                    <div class="img1"><img src="images/sea.png" alt="" class="avatar"></div>
+                    <div class="name1">如果早知道</div>
+                </div>
+                <div class="friend" data-active="0">
+                    <div class="img1"><img src="images/OO.ico" alt="" class="avatar"></div>
+                    <div class="name1">官方</div>
+                </div> -->
+                <!-- <div class="friend">
+                    <div class="img1"></div>
+                    <div class="name2"></div>
+                </div>
+                <div class="friend">
+                    <div class="img1"></div>
+                    <div class="name2"></div>
+                </div>
+                <div class="friend">
+                    <div class="img1"></div>
+                    <div class="name2"></div>
+                </div>
+                <div class="friend">
+                    <div class="img1"></div>
+                    <div class="name2"></div>
+                </div>
+                <div class="friend">
+                    <div class="img1"></div>
+                    <div class="name2"></div>
+                </div> -->
+            </div>
+        </div>
+    
+        <div class="right">
+            <!-- <div class="winTalk">
+                <div class="look">
+                    <div class="message-l">
+                        <div class="img2"><img src="images/sea.png" alt="" class="avatar-l"></div>
+                        <div class="bubble-l">你好,我是阿杰，你也可以叫我杰哥</div>
+                    </div>
+                    <div class="message-r">
+                        <div class="img2"><img src="images/colorful.png" alt="" class="avatar-r"></div>
+                        <div class="bubble-r">杰哥你好，我是阿伟</div>
+                    </div>
+                    <div class="message-l">
+                        <div class="img2"><img src="images/sea.png" alt="" class="avatar-l"></div>
+                        <div class="bubble-l">听说你很勇哦</div>
+                    </div>
+                    <div class="message-r">
+                        <div class="img2"><img src="images/colorful.png" alt="" class="avatar-r"></div>
+                        <div class="bubble-r">废话，我超勇的好不好，我超会喝的啦</div>
+                    </div>
+                    <div class="message-l">
+                        <div class="img2"><img src="images/sea.png" alt="" class="avatar-l"></div>
+                        <div class="bubble-l">诶哟，身体蛮结实的嘛</div>
+                    </div>
+                    <div class="message-r">
+                        <div class="img2"><img src="images/colorful.png" alt="" class="avatar-r"></div>
+                        <div class="bubble-r">杰哥你干嘛啦</div>
+                    </div>
+                    <div class="message-l">
+                        <div class="img2"><img src="images/sea.png" alt="" class="avatar-l"></div>
+                        <div class="bubble-l">来~给你看点好康的</div>
+                    </div>
+                    <div class="message-r">
+                        <div class="img2"><img src="images/colorful.png" alt="" class="avatar-r"></div>
+                        <div class="bubble-r">好康的，是新游戏哦</div>
+                    </div>
+                    <div class="message-l">
+                        <div class="img2"><img src="images/sea.png" alt="" class="avatar-l"></div>
+                        <div class="bubble-l">什么新游戏，比游戏还刺激~，还能教你登dua郎，来啦，来了就知道了</div>
+                    </div>
+                </div>
+                <div class="write">
+                    <textarea placeholder="  请输入" class="say"></textarea>
+                    <div class="go"><i class="iconfont icon-yongyan send"></i></div>
+                </div>
+            </div> -->
+
+            <!-- <div class="winTalk">
+                <div class="look">
+                    <div class="message-r">
+                        <div class="img2"><img src="images/colorful.png" alt="" class="avatar-r"></div>
+                        <div class="bubble-r">在？抽个vip</div>
+                    </div>
+                    <div class="message-l">
+                        <div class="img2"><img src="images/OO.ico" alt="" class="avatar-l"></div>
+                        <div class="bubble-l">(doge)</div>
+                    </div>
+                </div>
+                <div class="write">
+                    <textarea placeholder="  请输入" class="say"></textarea>
+                    <div class="go"><i class="iconfont icon-yongyan send"></i></div>
+                </div>
+            </div> -->
+
+        </div>
+
+    </div>
+    
+    
+    <script src="script/canvas-talk.js" async></script>
+    <script src="script/talk.js"></script>
+    <script src="node_modules/electron-tabs/dist/electron-tabs.js" async></script>
+</body>
+</html>

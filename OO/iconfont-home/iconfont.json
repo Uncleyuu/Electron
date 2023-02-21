@@ -1,0 +1,72 @@
+{
+  "id": "3482423",
+  "name": "home",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "2578452",
+      "name": "设置",
+      "font_class": "shezhi",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "1376055",
+      "name": "退出登录",
+      "font_class": "tuichudenglu",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
+      "icon_id": "7155297",
+      "name": "切换账号",
+      "font_class": "qiehuanzhanghao",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "11432807",
+      "name": "面对面建群",
+      "font_class": "mianduimianjianqun",
+      "unicode": "e69c",
+      "unicode_decimal": 59036
+    },
+    {
+      "icon_id": "729340",
+      "name": "个人信息",
+      "font_class": "gerenxinxi",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
+      "icon_id": "2019064",
+      "name": "添加好友",
+      "font_class": "tianjiahaoyou",
+      "unicode": "e7aa",
+      "unicode_decimal": 59306
+    },
+    {
+      "icon_id": "11891825",
+      "name": "add-group",
+      "font_class": "add-group",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "15053896",
+      "name": "菜单",
+      "font_class": "24px",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "2593625",
+      "name": "创建群聊",
+      "font_class": "chuangjianqunliao",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    }
+  ]
+}

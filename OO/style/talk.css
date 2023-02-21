@@ -1,0 +1,294 @@
+body{
+    position: relative;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    height: 1px;
+}
+
+::-webkit-scrollbar-thumb{
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 10px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#canvas-container{
+    position: fixed;
+    /* background-color: aqua; */
+    margin-left: -10px;/*填充全部*/
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#canvas{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.top{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 50px;
+    background-color: white;
+    -webkit-app-region: drag;
+}
+
+#logo{
+    position: absolute;
+    float: left;
+    font-size: 60px;
+    left: 30px;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+}
+
+.winChange{
+    top: 0;
+    list-style-type: none;
+    padding-top: 0;
+}
+
+.winChange li{
+    float: right;
+    padding-right: 20px;
+    -webkit-app-region: no-drag;
+}
+
+.winChange i:hover{
+    cursor: pointer;
+    color: gray;
+}
+
+.bottom{
+    margin-top: 50px;
+    /* background-color: azure; */
+}
+
+.left{
+    /* background-color: aqua; */
+    display: flex;
+    position: fixed;
+    height: 600px;
+    width: 300px;
+}
+
+.friendsList{
+    overflow-y: auto;
+}
+
+.friend{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    height: 80px;
+    width: 260px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.friend:hover{
+    transform: scale(1.08) !important;
+}
+
+.avatar{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.name1{
+    overflow: hidden;
+}
+
+.right{
+    /* background-color: cadetblue; */
+    margin-top: 50px;
+    margin-left: 300px;
+    width: 780px;
+    height: 600px;
+}
+
+.winTalk{
+    /* background-color: beige; */
+    position: absolute;
+    top: 0;
+    width: 780px;
+    display: none;
+}
+
+.winTalk:first-child{
+    display: block;
+}
+
+.look{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* background-color: chocolate; */
+    height: 380px;
+    width: 780px;
+    /* height: 470px; */
+    margin: 10px;
+    overflow-y: auto;
+    transition: all 0.3s;
+}
+
+
+.message-l,
+.message-r{
+    display: flex;
+    max-width: 450px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.message-l{
+    margin-left: 2%;
+    /* background-color: brown; */
+}
+
+.message-r{
+    flex-direction: row-reverse;
+    transform: translateX(65%);
+    /* background-color: aqua; */
+}
+
+.avatar-l{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-right: 20px;
+}
+
+.avatar-r{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-left: 20px;
+}
+
+.bubble-l,
+.bubble-r{
+    position: relative;
+    background-color: white;
+    min-height: 50px;
+    border-radius: 10px;
+    word-break:break-all; 
+    padding: 2px;
+    clear: both;
+    display: block;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s;
+    border-left-color: none;
+    border: none;
+}
+
+.bubble-l::before{
+    position: absolute;
+    top: 10px;
+    content: "";
+    height: 0;
+    width: 0;
+    right: 100%;
+    border-right: 10px solid white;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.bubble-r::after{
+    position: absolute;
+    top: 10px;
+    content: "";
+    height: 0;
+    width: 0;
+    left: 100%;
+    border-left: 10px solid white;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left-color: inherit;
+}
+
+.write{
+    position: relative;
+    /* background-color: blue; */
+    margin: 10px;
+    height: 200px;
+    /* height: 110px; */
+    bottom: 0px;
+    transition: all 0.3s;
+    display: flex;
+}
+
+.icon{
+    position: absolute;
+    left: 8%;
+    margin-right: 5%;
+}
+
+i.expression{
+    font-size: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+i.file{
+    font-size: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.say{
+    position: absolute;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5px;
+    width: 90%;
+    height: 135px;
+    bottom: 10px;
+    resize: none;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    transition: all 0.3s;
+}
+
+.go{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 7%;
+    height: 50px;
+    width: 50px;
+    bottom: 17px;
+    background-color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+i.send{
+    color: white;
+    font-size: 30px;
+}

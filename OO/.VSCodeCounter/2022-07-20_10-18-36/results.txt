@@ -1,0 +1,33 @@
+Date : 2022-07-20 10:18:36
+Directory : d:\Electron\OO\script
+Total : 9 files,  816 codes, 115 comments, 157 blanks, all 1088 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JavaScript |          9 |        816 |        115 |        157 |      1,088 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++---------------------------------------+------------+------------+------------+------------+------------+
+| path                                  | files      | code       | comment    | blank      | total      |
++---------------------------------------+------------+------------+------------+------------+------------+
+| .                                     |          9 |        816 |        115 |        157 |      1,088 |
++---------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++---------------------------------------+------------+------------+------------+------------+------------+
+| filename                              | language   | code       | comment    | blank      | total      |
++---------------------------------------+------------+------------+------------+------------+------------+
+| d:\Electron\OO\script\canva-home.js   | JavaScript |        108 |         31 |         28 |        167 |
+| d:\Electron\OO\script\canvas-talk.js  | JavaScript |        133 |          5 |         25 |        163 |
+| d:\Electron\OO\script\home.js         | JavaScript |        100 |          8 |         16 |        124 |
+| d:\Electron\OO\script\homeNode.js     | JavaScript |          0 |          0 |          1 |          1 |
+| d:\Electron\OO\script\preload_home.js | JavaScript |          9 |          3 |          3 |         15 |
+| d:\Electron\OO\script\preload_talk.js | JavaScript |          9 |          3 |          2 |         14 |
+| d:\Electron\OO\script\sign.js         | JavaScript |        206 |         13 |         26 |        245 |
+| d:\Electron\OO\script\signNode.js     | JavaScript |          0 |          0 |          1 |          1 |
+| d:\Electron\OO\script\talk.js         | JavaScript |        251 |         52 |         55 |        358 |
+| Total                                 |            |        816 |        115 |        157 |      1,088 |
++---------------------------------------+------------+------------+------------+------------+------------+
